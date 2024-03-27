@@ -1,0 +1,11 @@
+specVersion: 0.36.0
+name: helloworld
+runtime: node
+registry: localhost:5000/helloworld
+image: localhost:5000/helloworld/helloworld:latest
+created: 2024-03-27T18:56:59.067233+08:00
+build:
+  builder: pack
+deploy:
+  namespace: default
+  image: localhost:5000/helloworld/helloworld@sha256:5010066ea66ab3c94c2469ffa5d46655178cb7750240a12b4f86e68b13f69cb6
